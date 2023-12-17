@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {
+    font-family: 'Gotham';
+    src: url(../font/Gotham-Black.otf) format("opentype");
+}
+*,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DBD9DA;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+/*tipography*/
+h2,h3,h4,h5,h6 {
+    color: white;
+    background-color: transparent;
+    font-family: 'Gotham-Black.otf' sans-serif;
+}
+p {
+    color: #202020;
+    background-color: transparent;
+    font-size: 100%;
+}
+ul,li {
+    color: #202020;
+}
+
+/*sectionHome*/
+#home {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #202020;
+}
+#home img {
+    position: absolute;
+    object-fit: cover;
+    /* pointer-events: none;*/
+}
+#imgrob1 {
+    top: 0;
+    width: 55%;
+    height: auto;
+    background-color: transparent;
+}
+#name1 {
+    font-size: 9rem;
+    position: absolute;
+    z-index: 0;
+    padding-bottom: 80px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    background-color: transparent;
+}
+#name2 {
+    font-size: 9rem;
+    padding-bottom: 80px;
+    z-index: 1;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-family: 'Anton', sans-serif;
+    background-color: transparent;
+}
+/*profil*/
+#profil {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: #DBD9DA;
+}
+.profil>h3 {
+    color: #202020;
+    font-weight: 500;
+    font-family: 'Gotham-Black.otf' sans-serif;
+}
+
+/*sectionAbout*/
+#about {
+    height: 100vh;
+    background-color:#DBD9DA;
+    /*
+    background-image: url(../img/bggrey.png);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+.about {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: transparent;
+}
+.textabout {
+    background-color: transparent;
+}
+.textabout>p {
+    font-family: sans-serif;
+    color: #202020;
+    font-size: 100%;
+}
+.textabout>h3 {
+    color: #202020;
+    font-size: 120%;
+    margin-bottom: 20px;
+}
+.textabout>h4 {
+    text-shadow: 2.5px 2.5px #202020;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: #202020;
+    font-size: 220%;
+    margin-bottom: 20px;
+}
+.about img {
+    position: absolute;
+    object-fit: cover;
+    pointer-events: none;
+    transition: transform 1s;
+}
+.about:hover .imgbg {
+    transform: translateY(-5%);
+    transition: 1s;
+}
+.about:hover .imgrob2 {
+    transform: translateX(5%);
+}
+.about .imgrob2:hover {
+    transform: translateX(0);
+}
+.imgbg {
+    height: 80%;
+    width: auto;
+}
+.imgrob2 {
+    height: auto;
+    width: 70%;
+}
+
+
+.textabout>h3 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Gotham-Black.otf' sans-serif;
+    color: white;
+    text-shadow: 3px 3px #202020;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #202020;
+}
+.pengalaman>h3 {
+    font-weight: 700;
+    font-size: 28px;
+    font-family: 'Gotham-Black.otf' sans-serif;
+    color: white;
+    text-shadow: 2.5px 2.5px black;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: black;
+}
+
+#activity {
+    background-color: #202020;
+}
+#activity>h3 {
+    font-family: 'Gotham-Black.otf' sans-serif;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: transparent;
+}
+.imgactivity {
+    width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    p {
+        font-size: 15px;
+    }
+    ul,li {
+        font-family: sans-serif;
+        color: #202020;
+        font-size: 14px;
+    }
+
+    #home {
+        height: 50dvh;
+    }
+    #imgrob1 {
+        width: 700px;
+        margin-top: 10px;
+    }
+    #name1 {
+        font-size: 40px;
+    }
+    #name2 {
+        font-size: 40px;
+    }
+
+
+    .profil>h3 {
+        font-weight: 500;
+        font-family: 'Gotham-Black.otf' sans-serif;
+    }
+
+    #about {
+        height: 100vh;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.5;
+    }
+    .textabout {
+        padding-top: 10px;
+        background-color: transparent;
+        position: absolute;
+        z-index: 1;
+    }
+    .textabout>h3 {
+        font-size: 40px;
+        font-weight: 700;
+        font-family: 'Gotham-Black.otf' sans-serif;
+        color: white;
+        text-shadow: 3px 3px #202020;
+        -webkit-text-stroke-width: 0.7px;
+        -webkit-text-stroke-color: #202020;
+    }
+    .textabout>p {
+        font-size: 13.3px;
+        text-align: justify;
+    }
+    .imgbg {
+        height: 50%;
+        width: auto;
+    }
+    .pengalaman>h3 {
+        font-weight: 700;
+        font-family: 'Gotham-Black.otf' sans-serif;
+        color: white;
+        text-shadow: 3px 3px black;
+        -webkit-text-stroke-width: 0.7px;
+        -webkit-text-stroke-color: black;
+    }
+
+
+    #activity>h3 {
+        font-size: 20px;
+        -webkit-text-stroke-width: 0.4px;
+        -webkit-text-stroke-color: white;
+        -webkit-text-fill-color: transparent;
+    }
+}

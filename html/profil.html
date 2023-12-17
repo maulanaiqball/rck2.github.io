@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css_botstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--js_botstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Linkw3-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--link CSS-->
+    <link rel="stylesheet" href="../css/profil.css">
+    <title>Profil</title>
+</head>
+
+<body>
+    <!--sectionhome-->
+    <section class="container-fluid grey justify-content-end align-items-center" id="home">
+        <h1 id="name1" class="transparent">ROB.CLINTON.KARDINAL</h1>
+        <img class="img-fluid transparent imgrob1" src="../img/rckpose3.png" alt="" id="imgrob1">
+        <h1 id="name2" class="transparent">ROB.CLINTON.KARDINAL</h1>
+        <script>
+            let name1 = document.getElementById('name1');
+            let imgrob1 = document.getElementById('imgrob1');
+            let name2 = document.getElementById('name2');
+
+            window.addEventListener('scroll', function () {
+                let value = window.scrollY;
+                name1.style.marginRight = value * 4 + 'px';
+                imgrob1.style.top = value * 0.30 + 'px';
+                name2.style.marginLeft = value * 4 + 'px';
+            })
+        </script>
+    </section>
+
+    <!--sectionProfil-->
+    <section class="container-fluid" id="profil">
+        <div class="container bg-transparent profil">
+            <h3>
+                Rob Clinton Kardinal adalah seorang politikus dan pengusaha muda. Pria kelahiran Jakarta, 06 Februari 1993
+                tersebut menjadi politikus dan kader Partai Golkar mengikuti jejak sang ayah, Robert Joppy Kardinal.
+            </h3>
+        </div>
+    </section>
+
+    <!--sectionAbout-->
+    <section class="container" id="about">
+        <div class="row bg-transparent">
+            <div class="col-md-6 about justify-content-end align-items-center">
+                <img class="img-fluid bg-transparent imgbg" src="../img/bgabsr.png" alt="">
+                <img class="img-fluid bg-transparent imgrob2" src="../img/rckpose4.png" alt="" id="imgrob2">
+            </div>
+            <div class="col-md-6 textabout justify-content-center align-items-start d-flex flex-column">
+                <h3>ASAL USUL</h3>
+                <p>
+                    Rob Clinton Kardinal menjalani masa-masa sekolahnya di Saint Peter School, Jakarta. Kemudian,
+                    dirinya menyelesaikan pendidikan perguruan tingginya di
+                    Universitas Indonesia dengan jurusan Fakultas Ekonomi serta Universitas Adelaide, Australia, dengan
+                    jurusan yang sama, yaitu Ekonomi & Finansial.
+                    Karier profesional seorang Rob Clinton bermula saat mendirikan PT. Jaya Data Indonesia pada tahun
+                    2013 silam. Ia juga merupakan sosok di balik berdirinya media
+                    digital Muse Media ID (2020) dan Shots Coffee Bar (2021). Saat ini, Rob Clinton menjabat sebagai
+                    Ketua Umum Asosiasi Olahraga Video Games Indonesia (AVGI)
+                    serta menjabat sebagai Komisaris untuk perusahaan PT. HBI, Skywell Indonesia, dan Positive Vibes ID.
+                    Sementara, dalam di dunia politik Rob Clinton memulai kariernya dengan menjabat sebagai Wakil
+                    Bendahara PP AMPG (Angkatan Muda Partai Golkar). Selanjutnya,
+                    ia menjadi Ketua Koperasi PP Angkatan Muda Partai Golkar pada 2017 - 2018. Adapun, karirnya di dunia
+                    politik mengikuti jejak sang ayah, Robert Joppy Kardinal
+                    yang merupakan anggota DPR RI sekaligus dapil Papua Barat.
+                    Di luar dunia profesional dan politik, suami dari Chelsea Islan tersebut yaitu Rob Clinton Kardinal
+                    juga menjabat sebagai Koordinator Digital Universitas Indonesia
+                    (Iluni UI), Koordinator Ekonomi Digital HIPMI Jakarta, Dewan Penasehat SAPMA Pemuda Pancasila DKI
+                    Jakarta, dan Ketua Pemuda KOSGORO.
+                    Ia juga menempati posisi Wakil Ketua Umum Indonesia Crypto Consumer Associations bidang Digital
+                    Ekonomi dan Investasi, serta Wakil Ketua Umum Bidang
+                    Pemuda dan Olahraga Golkar DKI Jakarta
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row mt-4 mb-4">
+            <div class="col-md-4 pengalaman">
+                <h3>PENDIDIKAN</h3>
+                <ul>
+                    <li>2011 : Universitas Indonesia, Indonesia</li>
+                    <li>2013 : Universitas Adelaide, Australia</li>
+                    <li>2015 : Ekonomi fan Finansial</li>
+                </ul>
+            </div>
+            <div class="col-md-4 pengalaman">
+                <h3>ORGANISASI</h3>
+                <ul>
+                    <li>Ketua AMPG DKI Jakarta</li>
+                    <li>Ketua dari AVGI</li>
+                    <li>Kordinator Digital UI Alumni (ILUNI UI)</li>
+                    <li>Koordinator Digital Ekonomi dan Investasi (ICCA)</li>
+                    <li>Kordinator Ekonomi dan DigitalHIPMI Jakarta</li>
+                    <li>Dewan Penasehat SAPMA Pemuda Pancsila</li>
+                    <li>Ketua Pemuda KOSGORO</li>
+                    <li>Wakil Ketua Umum KNPI</li>
+                </ul>
+            </div>
+            <div class="col-md-4 pengalaman">
+                <h3>PENGALAMAN KERJA</h3>
+                <ul>
+                    <li>2013 : Pendiri PT jayadata Indonesia</li>
+                    <li>2016 : Wakil Bendahara Ketua Umum PP AMPG</li>
+                    <li>2017 : Ketua Koperasi PP Angkatan Muda Partai Golkar</li>
+                    <li>2018 : Pendiri Onic Esport Indonesia</li>
+                    <li>2019 : Komisaris Perusahaan Genco Petrol</li>
+                    <li>2020 : Pendiri Muse Media ID Komisaris PT HBI Komisaris Skywell Indonesia</li>
+                    <li>2022 : Komisaris Positive Vibes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--img-->
+    <section class="container-fluid pt-4 d-flex flex-column justify-content-center align-items-center pb-5" id="activity">
+        <h3 class="mt-4 mb-4 text-center">IKUTI AKTIFITAS TERBARU <br> DARI ROB CLINTON KARDINAL</h3>
+        <div class="row">
+            <!--1-->
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-md-6 p-0">
+                        <img class="img-fluid" src="../img/1.png" alt="">
+                    </div>
+                    <div class="col-md-6 p-0">
+                        <img class="img-fluid" src="../img/2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-md-6 p-0">
+                        <img class="img-fluid" src="../img/3.png" alt="">
+                    </div>
+                    <div class="col-md-6 p-0">
+                        <img class="img-fluid" src="../img/4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--1-->
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-md-6 p-0">
+                        <img class="img-fluid" src="../img/5.png" alt="">
+                    </div>
+                    <div class="col-md-6 p-0">
+                        <img class="img-fluid" src="../img/6.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-md-6 p-0">
+                        <img class="img-fluid" src="../img/7.png" alt="">
+                    </div>
+                    <div class="col-md-6 p-0">
+                        <img class="img-fluid" src="../img/8.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
