@@ -26,26 +26,26 @@
 <body>
     <!-- Sidebar -->
     <div class="sidebar">
-        <div class="w3-sidebar w3-bar-block" style="display:none; right: 0;" id="mySidebar">
-            <button onclick="w3_close()" class="w3-bar-item w3-button w3-xxxlarge"> &times;</button>
-            <a href="index.html" class="w3-bar-item w3-button">
+        <img src="img/logo1.png" alt="">
+        <div class="w3-sidebar w3-bar-block w3-animate-right" style="display:none; z-index:5; right:0;" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-xxxlarge" onclick="w3_close()">&times;</button>
+            <a href="#" class="w3-bar-item w3-button">
                 BERANDA
             </a>
-            <a href="html/profil.html" class="w3-bar-item w3-button">
+            <a href="#" class="w3-bar-item w3-button">
                 PROFIL
             </a>
-            <a href="https://open.spotify.com/" class="w3-bar-item w3-button">
-                PLAYLIST
+            <a href="#" class="w3-bar-item w3-button">
+                PROFIL
             </a>
-            <a href="https://www.tokopedia.com/" class="w3-bar-item w3-button">
+            <a href="#" class="w3-bar-item w3-button">
                 STORE
             </a>
         </div>
-        <div class="w3-teal d-flex justify-content-between">
-            <img src="img/logo1.png" alt="">
-            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-        </div>
+        <div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+        <button class="custom-hamburger" onclick="w3_open()">☰</button>
     </div>
+
 
     <!--sectionHome-->
     <section class="container-fluid" id="home">
@@ -472,10 +472,12 @@
         function w3_open() {
             document.getElementById("mySidebar").style.width = "60%";
             document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
         }
 
         function w3_close() {
             document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
         }
     </script>
 

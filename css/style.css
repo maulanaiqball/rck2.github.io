@@ -140,9 +140,26 @@ img {
     position: fixed;
     z-index: 3;
     width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .w3-sidebar {
     background-color: #202020;
+}
+.custom-hamburger {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #202020;
+    font-size: 2.4rem;
+    font-weight: 500;
+    padding-right: 15px;
+}
+.custom-hamburger:focus {
+    outline: none;
 }
 .w3-teal {
     z-index: 3;
@@ -156,9 +173,6 @@ img {
     color: #DBD9DA;
     font-family: 'Gotham', sans-serif;
 }
-#mySidebar>a:hover {
-    color: #FDE047;
-}
 
 /*section home*/
 #home {
@@ -167,12 +181,12 @@ img {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    
+    /*
     background-image: url(../img/bgkuning.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    /*
-    background-image: linear-gradient(#FDE047, #FDE047, #000000);*/
+    background-size: cover;*/
+    
+    background-image: linear-gradient(#FDE047, #FDE047, #000000);
 }
 /*#home img {
     position: absolute;
@@ -183,7 +197,7 @@ img {
     position: absolute;
     z-index: 0;
     top: 20%;
-    left: 50%;
+    left: 45%;
     text-shadow: 6px 6px #202020;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #202020;
@@ -199,11 +213,13 @@ img {
     position: absolute;
     z-index: 1;
     top: 70%;
-    left: 50%;
+    left: 45%;
 }
 .name2>p {
-    color: #202020;
+    color: white;
     font-weight: bold;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #202020;
 }
 .name2>h3 {
     text-shadow: 3px 3px #202020;
@@ -575,8 +591,11 @@ img {
     .name2 {
         position: absolute;
         z-index: 2;
-        top: 65%;
+        top: 60%;
         left: 50%;
+    }
+    .imglogo {
+        padding-bottom: 50%;
     }
     .name2>p {
         color: #DBD9DA;
