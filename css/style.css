@@ -615,10 +615,10 @@ img {
     }
     /*about*/
     #about {
-        height: 85dvh;
+        height: 100dvh;
     }
     .about {
-        height: 85dvh;
+        height: 100dvh;
         position: absolute;
         z-index: 0;
         opacity: 0.5;
